@@ -13,7 +13,7 @@ public class WishMessageController {
 	
 	@GetMapping("/wishMessage")
 	  public Map<String, String> getWishMessage() {
-	        Map<String, String> response = new HashMap();
+	        Map<String, String> response = new HashMap<>();
 	        response.put("message", "Welcome to ICICI Digital Banking! Have a great day.");
 	        return response;
 	    }
