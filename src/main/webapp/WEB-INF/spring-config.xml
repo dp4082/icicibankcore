@@ -13,7 +13,9 @@
 
    <!-- Enable Spring MVC annotations (including HandlerMapping and HandlerAdapter) --> 
     <mvc:annotation-driven />
-
+    
+   <!--  by default all /paths will be handled by servelt if you keep bellow servlets path will be hadndled by servlets only  --> 
+<mvc:default-servlet-handler />
     <!-- Scan controller and service packages -->
     <context:component-scan base-package="com.icici" />
 

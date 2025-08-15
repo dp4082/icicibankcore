@@ -21,6 +21,19 @@
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+    
+     <!-- Servlet json information -->
+    <servlet>
+        <servlet-name>htmlinfo</servlet-name>
+        <servlet-class>com.icici.servlet.InfoServletHtmlResponse</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>htmlinfo</servlet-name>
+        <url-pattern>/htmlinfo</url-pattern>
+    </servlet-mapping>
 
 
 </web-app>
